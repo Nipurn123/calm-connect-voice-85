@@ -45,33 +45,33 @@ export const MoodTracker = () => {
   };
 
   return (
-    <div className="space-y-4 sm:space-y-6">
-      <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4">
-        <MoodButton
-          mood="great"
-          label="Great"
-          isSelected={selectedMood === "great"}
-          onClick={() => handleMoodSelect("great")}
-        />
-        <MoodButton
-          mood="okay"
-          label="Okay"
-          isSelected={selectedMood === "okay"}
-          onClick={() => handleMoodSelect("okay")}
-        />
-        <MoodButton
-          mood="struggling"
-          label="Struggling"
-          isSelected={selectedMood === "struggling"}
-          onClick={() => handleMoodSelect("struggling")}
-        />
-        <MoodButton
-          mood="crisis"
-          label="Crisis"
-          isSelected={selectedMood === "crisis"}
-          onClick={() => handleMoodSelect("crisis")}
-        />
+      <div className="space-y-4 sm:space-y-6 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+        <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4">
+          <MoodButton
+            mood="great"
+            label="Great"
+            isSelected={selectedMood === "great"}
+            onClick={() => handleMoodSelect("great")}
+          />
+          <MoodButton
+            mood="okay"
+            label="Okay"
+            isSelected={selectedMood === "okay"}
+            onClick={() => handleMoodSelect("okay")}
+          />
+          <MoodButton
+            mood="struggling"
+            label="Struggling"
+            isSelected={selectedMood === "struggling"}
+            onClick={() => handleMoodSelect("struggling")}
+          />
+          <MoodButton
+            mood="crisis"
+            label="Crisis"
+            isSelected={selectedMood === "crisis"}
+            onClick={() => handleMoodSelect("crisis")}
+          />
+        </div>
       </div>
-    </div>
   );
 };

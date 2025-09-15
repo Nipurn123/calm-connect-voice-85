@@ -48,18 +48,18 @@ export const VoiceAssistant = () => {
   const IconComponent = getIcon();
 
   return (
-    <div className="flex justify-center px-4">
+    <div className="flex justify-center px-4 animate-scale-in" style={{ animationDelay: '0.4s' }}>
       <button
         onClick={handleVoiceClick}
         className={cn(
-          "w-32 h-32 sm:w-40 sm:h-40 lg:w-44 lg:h-44 rounded-full bg-gradient-voice text-white transition-all duration-300 shadow-voice active:scale-95 flex items-center justify-center touch-manipulation",
-          isListening && "animate-pulse ring-2 sm:ring-4 ring-voice-secondary/50",
-          isSpeaking && "animate-pulse bg-primary ring-2 sm:ring-4 ring-primary/50"
+          "w-32 h-32 sm:w-40 sm:h-40 lg:w-44 lg:h-44 rounded-full bg-gradient-voice hover:bg-gradient-voice-hover text-white transition-all duration-500 shadow-voice hover:shadow-strong active:scale-95 flex items-center justify-center touch-manipulation backdrop-blur-sm border border-white/20 animate-fade-in",
+          isListening && "animate-pulse ring-4 sm:ring-6 ring-voice-secondary/60 shadow-glow-accent",
+          isSpeaking && "animate-breathe bg-gradient-voice-hover ring-4 sm:ring-6 ring-accent/60 shadow-glow-accent"
         )}
       >
         <div className="flex flex-col items-center gap-1 sm:gap-2 px-2">
-          <IconComponent className="w-6 h-6 sm:w-8 sm:h-8" />
-          <span className="text-xs sm:text-sm font-medium text-center leading-tight">
+          <IconComponent className="w-6 h-6 sm:w-8 sm:h-8 drop-shadow-lg" />
+          <span className="text-xs sm:text-sm font-semibold text-center leading-tight drop-shadow-sm">
             {isSpeaking ? "Speaking..." : isListening ? "Listening..." : "Talk to Voice Assistant"}
           </span>
         </div>

@@ -8,53 +8,74 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 180 25% 95%;
-    --foreground: 210 10% 23%;
+    --background: 185 30% 96%;
+    --foreground: 210 12% 16%;
 
     --card: 0 0% 100%;
-    --card-foreground: 210 10% 23%;
+    --card-foreground: 210 12% 16%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 210 10% 23%;
+    --popover-foreground: 210 12% 16%;
 
-    --primary: 168 76% 36%;
+    --primary: 168 85% 32%;
     --primary-foreground: 0 0% 100%;
+    --primary-glow: 168 70% 45%;
 
-    --secondary: 168 25% 85%;
-    --secondary-foreground: 210 10% 23%;
+    --secondary: 168 30% 88%;
+    --secondary-foreground: 210 12% 16%;
 
-    --muted: 168 15% 90%;
-    --muted-foreground: 210 10% 64%;
+    --muted: 168 20% 94%;
+    --muted-foreground: 210 8% 58%;
 
-    --accent: 213 94% 68%;
+    --accent: 213 100% 70%;
     --accent-foreground: 0 0% 100%;
+    --accent-glow: 213 85% 80%;
 
-    --destructive: 0 72% 51%;
+    --destructive: 0 75% 55%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 168 25% 85%;
-    --input: 168 25% 85%;
-    --ring: 168 76% 36%;
+    --border: 168 30% 88%;
+    --input: 168 25% 92%;
+    --ring: 168 85% 32%;
 
-    /* Mental Health Color System */
-    --mood-great: 120 48% 54%;
-    --mood-okay: 45 93% 58%;
-    --mood-struggling: 24 95% 53%;
-    --mood-crisis: 0 72% 51%;
+    /* Enhanced Mental Health Color System */
+    --mood-great: 120 55% 50%;
+    --mood-great-glow: 120 45% 65%;
+    --mood-okay: 45 95% 55%;
+    --mood-okay-glow: 45 85% 70%;
+    --mood-struggling: 24 100% 50%;
+    --mood-struggling-glow: 24 85% 65%;
+    --mood-crisis: 0 80% 55%;
+    --mood-crisis-glow: 0 65% 70%;
     
-    /* Voice Assistant */
-    --voice-primary: 213 94% 68%;
-    --voice-secondary: 213 84% 78%;
+    /* Enhanced Voice Assistant */
+    --voice-primary: 213 100% 65%;
+    --voice-secondary: 213 90% 75%;
+    --voice-glow: 213 80% 85%;
     
-    /* Gradients */
-    --gradient-main: linear-gradient(135deg, hsl(180 35% 88%) 0%, hsl(0 0% 100%) 50%, hsl(168 25% 92%) 100%);
-    --gradient-card: linear-gradient(135deg, hsl(0 0% 100% / 0.8) 0%, hsl(168 25% 95% / 0.6) 100%);
-    --gradient-voice: linear-gradient(135deg, hsl(213 94% 68%) 0%, hsl(213 84% 78%) 100%);
+    /* Beautiful Gradients */
+    --gradient-main: linear-gradient(145deg, hsl(185 45% 92%) 0%, hsl(0 0% 100%) 30%, hsl(168 35% 90%) 60%, hsl(185 40% 94%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100% / 0.95) 0%, hsl(168 30% 96% / 0.8) 100%);
+    --gradient-card-hover: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(168 35% 94% / 0.9) 100%);
+    --gradient-voice: linear-gradient(135deg, hsl(213 100% 65%) 0%, hsl(213 90% 75%) 50%, hsl(213 80% 80%) 100%);
+    --gradient-voice-hover: linear-gradient(135deg, hsl(213 100% 60%) 0%, hsl(213 90% 70%) 50%, hsl(213 80% 75%) 100%);
+    --gradient-mood-great: linear-gradient(135deg, hsl(120 55% 50%) 0%, hsl(120 45% 65%) 100%);
+    --gradient-mood-okay: linear-gradient(135deg, hsl(45 95% 55%) 0%, hsl(45 85% 70%) 100%);
+    --gradient-mood-struggling: linear-gradient(135deg, hsl(24 100% 50%) 0%, hsl(24 85% 65%) 100%);
+    --gradient-mood-crisis: linear-gradient(135deg, hsl(0 80% 55%) 0%, hsl(0 65% 70%) 100%);
     
-    /* Shadows */
-    --shadow-soft: 0 4px 20px hsl(168 25% 50% / 0.15);
-    --shadow-mood: 0 8px 25px hsl(var(--mood-color) / 0.25);
-    --shadow-voice: 0 12px 40px hsl(213 94% 68% / 0.3);
+    /* Enhanced Shadows & Glows */
+    --shadow-soft: 0 8px 32px hsl(168 25% 50% / 0.12);
+    --shadow-medium: 0 12px 48px hsl(168 30% 45% / 0.15);
+    --shadow-strong: 0 20px 64px hsl(168 35% 40% / 0.2);
+    --shadow-mood: 0 12px 40px hsl(var(--mood-color) / 0.3);
+    --shadow-voice: 0 16px 56px hsl(213 100% 65% / 0.35);
+    --glow-primary: 0 0 32px hsl(168 85% 32% / 0.3);  
+    --glow-accent: 0 0 40px hsl(213 100% 70% / 0.4);
+    --glow-mood-great: 0 0 24px hsl(120 55% 50% / 0.4);
+    --glow-mood-okay: 0 0 24px hsl(45 95% 55% / 0.4);
+    --glow-mood-struggling: 0 0 24px hsl(24 100% 50% / 0.4);
+    --glow-mood-crisis: 0 0 24px hsl(0 80% 55% / 0.4);
 
     /* Responsive Spacing */
     --spacing-xs: 0.25rem;
